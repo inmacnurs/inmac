@@ -1,10 +1,65 @@
-	`<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <!-- Важно для корректного отображения на мобильных -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Школа №1</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Дополнительные стили для адаптации (можно перенести в styles.css) -->
+    <style>
+      /* Изображения не выходят за границы родительского контейнера */
+      img {
+          max-width: 100%;
+          height: auto;
+      }
+
+      /* Адаптивная сетка заданий */
+      .teacher-group {
+          display: flex;
+          flex-wrap: wrap; /* перенос в новую строку при нехватке места */
+          margin-bottom: 20px;
+      }
+      .teacher {
+          width: 30%;
+          margin: 10px;
+          box-sizing: border-box;
+      }
+
+      /* На экранах до 768px (планшеты) делаем 2 карточки в ряд */
+      @media (max-width: 768px) {
+        .teacher {
+            width: 45%;
+        }
+      }
+
+      /* На экранах до 480px (телефоны) делаем 1 карточку в ряд */
+      @media (max-width: 480px) {
+        .teacher {
+            width: 100%;
+            margin: 10px 0;
+        }
+      }
+
+      /* Меню при узкой ширине экрана «складывается» в колонку */
+      @media (max-width: 600px) {
+        header nav ul {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        header nav ul li {
+          margin-bottom: 5px;
+        }
+
+        /* Аналогично для второго nav внутри main (если необходимо) */
+        main header nav li {
+          margin-bottom: 5px;
+        }
+      }
+    </style>
 </head>
 <body>
 
@@ -15,60 +70,68 @@
         </div>
         <nav>
             <ul>
-            <li><a href="index.html">Біз туралы</a></li>
-            <li><a href="about.html">Тапсырмалар</a></li>
-            <li><a href="teachers.html">Видео</a></li>
-            <li><a href="bu.html">Қызықты ақпарат</a></li>
-            <li><a href="contact.html">Контактілер</a></li>
+                <li><a href="index.html">Біз туралы</a></li>
+                <li><a href="about.html">Тапсырмалар</a></li>
+                <li><a href="teachers.html">Видео</a></li>
+                <li><a href="bu.html">Қызықты ақпарат</a></li>
+                <li><a href="contact.html">Контактілер</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-<header>
-    <nav>
+      <!-- Второй блок меню -->
+      <header>
+        <nav>
             <li><a href="Aq.html">White</a></li>
-            <li><a href="Sary.html">Yellow</a></l>
-            <li><a href="Kok.html">Blue</a></l>
-            <li><a href="Zhasyl.html">Green</a></l>
-            <li><a href="Kyzyl.html">Red</a></l>
-            <li><a href="Orang.html">Orange</a></l>
-    </nav>
-</header>
-            <section>
-        <div class="teacher-group">
-            <div class="teacher">
-                 <h2>1-тапсырма     / <a>1 балл</a></h2> 
-                 <img src="О.1.png" alt="Учитель 1">
-            </div>
+            <li><a href="Sary.html">Yellow</a></li>
+            <li><a href="Kok.html">Blue</a></li>
+            <li><a href="Zhasyl.html">Green</a></li>
+            <li><a href="Kyzyl.html">Red</a></li>
+            <li><a href="Orang.html">Orange</a></li>
+        </nav>
+      </header>
 
-            <div class="teacher">
-                <h2>2-тапсырма     / <a>1 балл</a></h2> 
-                <img src="О.2.png" alt="Учитель 2">
-            </div>
-                        <div class="teacher">
-                <h2>3-тапсырма     / <a>1 балл</a></h2> 
-                <img src="О.3.png" alt="Учитель 2">
-            </div>
-                        <div class="teacher">
-                <h2>4-тапсырма     / <a>1 балл</a></h2> 
-                <img src="О.4.png" alt="Учитель 2">
-            </div>
-                        <div class="teacher">
-                <h2>5-тапсырма     / <a>1 балл</a></h2> 
-                <img src="О.5.png" alt="Учитель 2">
-            </div>
-                        <div class="teacher">
-                <h2>6-тапсырма     / <a>1 балл</a></h2> 
-                <img src="О.6.png" alt="Учитель 2">
-            </div>
-                        <div class="teacher">
-                <h2>7-тапсырма     / <a>1 балл</a></h2> 
-                <img src="О.7.png" alt="Учитель 2">
-            </div>
+      <section>
+        <div class="teacher-group">
+          <div class="teacher">
+            <h2>1-тапсырма / <a>1 балл</a></h2>
+            <img src="О.1.png" alt="Учитель 1">
+          </div>
+
+          <div class="teacher">
+            <h2>2-тапсырма / <a>1 балл</a></h2>
+            <img src="О.2.png" alt="Учитель 2">
+          </div>
+
+          <div class="teacher">
+            <h2>3-тапсырма / <a>1 балл</a></h2>
+            <img src="О.3.png" alt="Учитель 3">
+          </div>
+
+          <div class="teacher">
+            <h2>4-тапсырма / <a>1 балл</a></h2>
+            <img src="О.4.png" alt="Учитель 4">
+          </div>
+
+          <div class="teacher">
+            <h2>5-тапсырма / <a>1 балл</a></h2>
+            <img src="О.5.png" alt="Учитель 5">
+          </div>
+
+          <div class="teacher">
+            <h2>6-тапсырма / <a>1 балл</a></h2>
+            <img src="О.6.png" alt="Учитель 6">
+          </div>
+
+          <div class="teacher">
+            <h2>7-тапсырма / <a>1 балл</a></h2>
+            <img src="О.7.png" alt="Учитель 7">
+          </div>
         </div>
-    </section>
-     </main>
+      </section>
+    </main>
+
     <footer>
         <p>&copy; Innovative mathematical cube</p>
     </footer>
