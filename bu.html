@@ -2,9 +2,36 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <!-- Важно для корректного отображения на мобильных устройствах -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Школа №1</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Небольшие стили для адаптивности (можно перенести в styles.css) -->
+    <style>
+      /* Если логотип слишком большой, делаем его «резиновым» */
+      .logo img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Меню при узкой ширине экрана (до 600px) «складывается» в колонку */
+      @media (max-width: 600px) {
+        header nav ul {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        header nav ul li {
+          margin-bottom: 5px;
+        }
+      }
+
+      /* Ссылкам можно задать перенос, чтобы длинные URL не вылазили за экран */
+      section p {
+        word-wrap: break-word; /* Позволяет переносить длинные ссылки на следующую строку */
+      }
+    </style>
 </head>
 <body>
 
@@ -15,16 +42,16 @@
         </div>
         <nav>
             <ul>
-            <li><a href="index.html">Біз туралы</a></li>
-            <li><a href="about.html">Тапсырмалар</a></li>
-            <li><a href="teachers.html">Видео</a></li>
-            <li><a href="bu.html">Қызықты ақпарат</a></li>
-            <li><a href="contact.html">Контактілер</a></li>
+                <li><a href="index.html">Біз туралы</a></li>
+                <li><a href="about.html">Тапсырмалар</a></li>
+                <li><a href="teachers.html">Видео</a></li>
+                <li><a href="bu.html">Қызықты ақпарат</a></li>
+                <li><a href="contact.html">Контактілер</a></li>
             </ul>
         </nav>
     </header>
 
-       <main>
+    <main>
         <section>
            <h2>Нағыз ҰБТ бойынша нұсқалар талдау</h2>
             <p>1. https://www.youtube.com/live/Ko68nDPz87g?si=6nrxs-VA2egZ8Fcj</p>
