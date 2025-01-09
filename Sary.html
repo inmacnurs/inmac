@@ -1,10 +1,72 @@
-	`<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <!-- Важно для корректного отображения на мобильных -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Школа №1</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Добавляем небольшие правки для адаптивности -->
+    <style>
+      /* Изображения растягиваются максимум на 100% контейнера,
+         чтобы не вылезать за границы экрана */
+      img {
+          max-width: 100%;
+          height: auto;
+      }
+
+      /* Адаптивная сетка для блока заданий */
+      .teacher-group {
+          display: flex;         /* используем Flexbox */
+          flex-wrap: wrap;       /* перенос в новую строку при нехватке места */
+          margin-bottom: 20px;
+      }
+
+      /* Каждое задание занимает ~30% на больших экранах */
+      .teacher {
+          width: 30%;
+          margin: 10px;          /* отступ между блоками */
+          box-sizing: border-box;
+      }
+
+      /* Если экран до 768px (планшеты), 
+         тогда карточки занимают ~45% */
+      @media (max-width: 768px) {
+        .teacher {
+            width: 45%;
+        }
+      }
+
+      /* Если экран до 480px (мобильные), 
+         делаем каждую карточку на всю ширину (100%) */
+      @media (max-width: 480px) {
+        .teacher {
+            width: 100%;
+            margin: 10px 0;
+        }
+      }
+
+      /* Меню (если нужно), 
+         при узкой ширине экрана пункты идут в столбик */
+      @media (max-width: 600px) {
+        header nav ul {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        header nav ul li {
+          margin-bottom: 5px;
+        }
+
+        /* Аналогично для второго nav (в main) 
+           — если нужно объединить в столбик при узком экране */
+        main header nav li {
+          margin-bottom: 5px;
+        }
+      }
+    </style>
 </head>
 <body>
 
@@ -15,60 +77,68 @@
         </div>
         <nav>
             <ul>
-            <li><a href="index.html">Біз туралы</a></li>
-            <li><a href="about.html">Тапсырмалар</a></li>
-            <li><a href="teachers.html">Видео</a></li>
-            <li><a href="bu.html">Қызықты ақпарат</a></li>
-            <li><a href="contact.html">Контактілер</a></li>
+                <li><a href="index.html">Біз туралы</a></li>
+                <li><a href="about.html">Тапсырмалар</a></li>
+                <li><a href="teachers.html">Видео</a></li>
+                <li><a href="bu.html">Қызықты ақпарат</a></li>
+                <li><a href="contact.html">Контактілер</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-<header>
-    <nav>
-            <li><a href="Aq.html">White</a></li>
-            <li><a href="Sary.html">Yellow</a></l>
-            <li><a href="Kok.html">Blue</a></l>
-            <li><a href="Zhasyl.html">Green</a></l>
-            <li><a href="Kyzyl.html">Red</a></l>
-            <li><a href="Orang.html">Orange</a></l>
-    </nav>
-</header>
-            <section>
-        <div class="teacher-group">
-            <div class="teacher">
-                 <h2>1-тапсырма     / <a>1 балл</a></h2> 
-                 <img src="С.1.png" alt="Учитель 1">
-            </div>
+        <!-- Второй блок меню (при желании тот же принцип адаптации) -->
+        <header>
+            <nav>
+                <li><a href="Aq.html">White</a></li>
+                <li><a href="Sary.html">Yellow</a></li>
+                <li><a href="Kok.html">Blue</a></li>
+                <li><a href="Zhasyl.html">Green</a></li>
+                <li><a href="Kyzyl.html">Red</a></li>
+                <li><a href="Orang.html">Orange</a></li>
+            </nav>
+        </header>
 
-            <div class="teacher">
-                <h2>2-тапсырма     / <a>1 балл</a></h2> 
-                <img src="С.2.png" alt="Учитель 2">
+        <section>
+            <div class="teacher-group">
+                <div class="teacher">
+                    <h2>1-тапсырма / <a>1 балл</a></h2>
+                    <img src="С.1.png" alt="Учитель 1">
+                </div>
+
+                <div class="teacher">
+                    <h2>2-тапсырма / <a>1 балл</a></h2>
+                    <img src="С.2.png" alt="Учитель 2">
+                </div>
+
+                <div class="teacher">
+                    <h2>3-тапсырма / <a>1 балл</a></h2>
+                    <img src="С.3.png" alt="Учитель 3">
+                </div>
+
+                <div class="teacher">
+                    <h2>4-тапсырма / <a>1 балл</a></h2>
+                    <img src="С.4.png" alt="Учитель 4">
+                </div>
+
+                <div class="teacher">
+                    <h2>5-тапсырма / <a>1 балл</a></h2>
+                    <img src="С,5.png" alt="Учитель 5">
+                </div>
+
+                <div class="teacher">
+                    <h2>6-тапсырма / <a>1 балл</a></h2>
+                    <img src="С.6.png" alt="Учитель 6">
+                </div>
+
+                <div class="teacher">
+                    <h2>7-тапсырма / <a>1 балл</a></h2>
+                    <img src="С.7.png" alt="Учитель 7">
+                </div>
             </div>
-                        <div class="teacher">
-                <h2>3-тапсырма     / <a>1 балл</a></h2> 
-                <img src="С.3.png" alt="Учитель 2">
-            </div>
-                        <div class="teacher">
-                <h2>4-тапсырма     / <a>1 балл</a></h2> 
-                <img src="С.4.png" alt="Учитель 2">
-            </div>
-                        <div class="teacher">
-                <h2>5-тапсырма     / <a>1 балл</a></h2> 
-                <img src="С,5.png" alt="Учитель 2">
-            </div>
-                        <div class="teacher">
-                <h2>6-тапсырма     / <a>1 балл</a></h2> 
-                <img src="С.6.png" alt="Учитель 2">
-            </div>
-                        <div class="teacher">
-                <h2>7-тапсырма     / <a>1 балл</a></h2> 
-                <img src="С.7.png" alt="Учитель 2">
-            </div>
-        </div>
-    </section>
-     </main>
+        </section>
+    </main>
+
     <footer>
         <p>&copy; Innovative mathematical cube</p>
     </footer>
