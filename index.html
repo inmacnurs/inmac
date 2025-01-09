@@ -1,10 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Школа №1</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <!-- Важно для адаптивности на мобильных устройствах -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Школа №1</title>
+  
+  <!-- Подключаем Ваш основной файл стилей (если он уже есть) -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Добавляем небольшие правки, чтобы страница стала адаптивной -->
+  <style>
+    /* Сброс отступов у элементов (по желанию) */
+    /* 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    } 
+    */
+
+    /* Делаем изображения «резиновыми» */
+    img {
+      max-width: 100%;
+      height: auto !important; /* !important переопределяет атрибут height в HTML */
+    }
+
+    /* При узких экранах складываем меню в вертикальный список (примерно до 600px) */
+    @media (max-width: 600px) {
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* или center, если хотите по центру */
+      }
+      nav ul li {
+        margin-bottom: 5px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -15,11 +49,11 @@
         </div>
         <nav>
             <ul>
-            <li><a href="index.html">Біз туралы</a></li>
-            <li><a href="about.html">Тапсырмалар</a></li>
-            <li><a href="teachers.html">Видео</a></li>
-            <li><a href="bu.html">Қызықты ақпарат</a></li>
-            <li><a href="contact.html">Контактілер</a></li>
+                <li><a href="indexx.html">Біз туралы</a></li>
+                <li><a href="about1.html">Тапсырмалар</a></li>
+                <li><a href="teachers.html">Видео</a></li>
+                <li><a href="bu.html">Қызықты ақпарат</a></li>
+                <li><a href="contact.html">Контактілер</a></li>
             </ul>
         </nav>
     </header>
@@ -29,24 +63,28 @@
             <center><h2>Қош келдіңіз!</h2></center>
         </section>
         <section>
-            <center><p><img src="nurs.jfif" width=500 height=600 alt="nurs"></p></center>
+            <!-- ширина/высота сохраняются, но будут переопределены max-width и height:auto -->
+            <center><p><img src="nurs.jfif" width="500" height="600" alt="nurs"></p></center>
             <center><h2>Жәнібек Нұрсұлтан Нұрбергенұлы</h2></center>
         </section>
         <section>
             <h2>Мақсатымыз:</h2>
             <li>Мектеп оқушыларының математика пәніне деген қызығушылығын арттыру.</li> 
             <li>Ауыл оқушыларына ҰБТ-ге жүйелі түрде дайындалуға мүмкіндік жасау.</li>
-     </main>
-     <main>
-      <section>
-            <center><p><img src="qr-99.jpg" width=600 height=700 alt="QR-99"></p></center>
-        </section>  
-        <section>
-             <center><p><img src="magaz.jfif" width=500 height=700 alt="nurs"></p></center>
-            <center><h2>Математик жас маман ҰБТ-ға дайындауда</h2></center>
-            <!-- Басты бетке қосымша ақпарат -->
         </section>
     </main>
+
+    <main>
+      <section>
+            <center><p><img src="qr-99.jpg" width="600" height="700" alt="QR-99"></p></center>
+        </section>  
+        <section>
+             <center><p><img src="magaz.jfif" width="500" height="700" alt="nurs"></p></center>
+            <center><h2>Математик жас маман ҰБТ-ға дайындауда</h2></center>
+            <!-- Басты бетке доп. информация -->
+        </section>
+    </main>
+
     <footer>
         <p>&copy; Innovative mathematical cube</p>
     </footer>
