@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школа №1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Логотип школы">
+            <h1>INMAC - innovative mathematical cube</h1>
+        </div>
+        <nav>
+            <ul>
+            <li><a href="index.html">Біз туралы</a></li>
+            <li><a href="about.html">Тапсырмалар</a></li>
+            <li><a href="teachers.html">Видео</a></li>
+            <li><a href="bu.html">Қызықты ақпарат</a></li>
+            <li><a href="contact.html">Контактілер</a></li>
+            </ul>
+        </nav>
+    </header>
+
+       <main>
+        <section>
+           <h2>Нағыз ҰБТ бойынша нұсқалар талдау</h2>
+            <p>1. https://www.youtube.com/live/Ko68nDPz87g?si=6nrxs-VA2egZ8Fcj</p>
+            <p>2. https://www.youtube.com/live/5upPSWnTfZU?si=icNumSwRRc4-9ZjJ</p>
+            <p>3. https://www.youtube.com/live/xdgK2NmYuvg?si=Me_oB7Y5Y_LHT0ke</p>
+        </section>
+        <section>
+           <h2>Пайдалы аккаунттар</h2>
+            <p>1. https://www.instagram.com/shamil.ahmadullin?igsh=MTA4azRmeGRyYWZsdA==</p>
+            <p>2. https://www.instagram.com/moldir_adilkyzy?igsh=MW9vN2ZrdDJnYjhoeQ==</p>
+            <p>3. https://www.instagram.com/aktolkyn_math?igsh=MnhnbGVjbHV0c2F2</p>
+            <p>4. https://www.instagram.com/ersultan.math?igsh=MXQ1MWs4MDV6NzJoYw==</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Innovative mathematical cube</p>
+    </footer>
+
+</body>
+</html>

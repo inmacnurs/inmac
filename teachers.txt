@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учителя - Сырым аудандық білім беру бөлімінің "мектеп-лицейі" - Часть 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .teacher-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .teacher {
+            flex-basis: 48%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        .teacher img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .teacher-group {
+                flex-direction: column;
+            }
+
+            .teacher {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Логотип школы">
+            <h1>INMAC - innovative mathematical cube</h1>
+        </div>
+        <nav>
+            <ul>
+            <li><a href="index.html">Біз туралы</a></li>
+            <li><a href="about.html">Тапсырмалар</a></li>
+            <li><a href="teachers.html">Видео</a></li>
+            <li><a href="bu.html">Қызықты ақпарат</a></li>
+            <li><a href="contact.html">Контактілер</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <section>
+      <center><h2>Бөліну қасиеттері</h2>
+      <p align= center> <embed src="Aq.mp4" width=700 height=500></p>
+    </section>
+    <section>
+      <center><h2>Дәреже</h2>
+      <p align= center> <embed src="Sary.mp4" width=700 height=500></p>
+    </section>
+    <section>
+      <center><h2>Шеңбер, дөңгелек</h2>
+      <p align= center> <embed src="Kok.mp4" width=700 height=500></p>
+    </section>
+    <section>
+      <center><h2>Жай және құрама сандар</h2>
+      <p align= center> <embed src="Zhasyl.mp4" width=700 height=500></p>
+    </section>
+    <section>
+      <center><h2>Көлем</h2>
+      <p align= center> <embed src="Kyzyl.mp4" width=700 height=500></p>
+    </section>
+    <section>
+      <center><h2>ЕҮОБ, ЕКОЕ</h2>
+      <p align= center> <embed src="Orang.mp4" width=700 height=500></p>
+      
+</main>
+
+<footer>
+    <p>&copy; Innovative mathematical cube</p>
+</footer>
+
+</body>
+</html>
+
