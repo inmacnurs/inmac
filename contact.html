@@ -2,9 +2,34 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <!-- Важно для корректного отображения на мобильных -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Школа №1</title>
+    <!-- Ваш основной файл стилей -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Дополнительные стили для адаптивности (можно перенести в styles.css) -->
+    <style>
+      /* Логотип не «вылезает» за пределы экрана */
+      .logo img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Меню при узкой ширине экрана «складывается» в колонку */
+      @media (max-width: 600px) {
+        header nav ul {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        header nav ul li {
+          margin-bottom: 5px;
+        }
+      }
+    </style>
 </head>
 <body>
 
@@ -15,15 +40,14 @@
         </div>
         <nav>
             <ul>
-            <li><a href="index.html">Біз туралы</a></li>
-            <li><a href="about.html">Тапсырмалар</a></li>
-            <li><a href="teachers.html">Видео</a></li>
-            <li><a href="bu.html">Қызықты ақпарат</a></li>
-            <li><a href="contact.html">Контактілер</a></li>
+                <li><a href="index.html">Біз туралы</a></li>
+                <li><a href="about.html">Тапсырмалар</a></li>
+                <li><a href="teachers.html">Видео</a></li>
+                <li><a href="bu.html">Қызықты ақпарат</a></li>
+                <li><a href="contact.html">Контактілер</a></li>
             </ul>
         </nav>
     </header>
-
 
     <main>
         <section>
@@ -32,7 +56,6 @@
             <p>Біздің телефон нөміріміз: +7 (776) 920-00-25</p>
             <p>Біздің инстаграм парақшамыз: @nzhanibek07</p>
         </section>
-
     </main>
 
     <footer>
